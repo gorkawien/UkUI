@@ -730,7 +730,7 @@ use.\n\nGraphical environment:" 12 75 3 \
 "LXDE" "Lightweight and efficient desktop" \
 "LXQT" "Lightweight and efficient QT based desktop" \
 "MATE" "Continuation of the GNOME 2 desktop" \
-"UKUI"  "Lightweight DE developed using Qt" \
+"UKUI" "Lightweight DE developed using Qt" \
 "Xfce" "Lightweight and modular desktop" 3>&1 1>&2 2>&3)
       if [ $? -eq 0 ]; then
         break
@@ -801,7 +801,7 @@ applications that integrate well with the MATE desktop." 8 60
               fi
               xinit_config="exec mate-session"
               ;;
-              "UKUI") DESKTOP_PACKAGES+=('ukui' 'deepin-terminal-old' 'featherpad' 'exfat-utils' 'ntfs-3g' ’firefox' 'git' 'wget' 'neofetch' 'nano' 'reflector' 'speedtest-cli')
+      "UKUI") DESKTOP_PACKAGES+=('ukui' 'deepin-terminal-old' 'featherpad' 'exfat-utils' 'ntfs-3g' ’firefox' 'git' 'wget' 'neofetch' 'nano' 'reflector' 'speedtest-cli')
               xinit_config="exec ukui-session-manager"
               ;;
       "Xfce") DESKTOP_PACKAGES+=('xfce4')
